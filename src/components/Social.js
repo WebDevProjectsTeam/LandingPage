@@ -17,6 +17,7 @@ const Social = () => {
             rel="noopener noreferrer"
             >
                 <img 
+                className="rounded-full hover:shadow-md"
                 src={twit}
                 height="64px"
                 width="64px"
@@ -30,6 +31,7 @@ const Social = () => {
             rel="noopener noreferrer"
             >
                 <img 
+                className="rounded-full hover:shadow-md"
                 src={insta}
                 height="64px"
                 width="64px"
