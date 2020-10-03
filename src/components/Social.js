@@ -2,44 +2,45 @@ import React from "react";
 import insta from "../assets/instagramiconlg.svg";
 import twit from "../assets/twittericonlg.svg";
 
-const Nav = () => {
-  return (
-    <div className="w-screen md:w-full py-4 px-16 bg-teal-900 shadow-md flex justify-between items-center">
-      <h1 className="text-2xl text-white font-mono">Folktale</h1>
-      <ul className="flex justify-end font-mono">
+const Social = () => {
 
-        <li className="mx-2">
-          <a 
+
+  return (
+    <div className="w-screen md:w-full mt-12 flex flex-col items-center">
+        <h2 className="text-xl font-bold text-teal-400 text-center">
+            Follow @myfolktale on social media<br />for even more great content!
+        </h2>
+        <div className="w-screen md:w-full mt-8 mb-12 flex justify-around">
+            <a 
             href="https://twitter.com/myfolktale"
             target="_blank"
             rel="noopener noreferrer"
             >
                 <img 
+                className="rounded-full hover:shadow-md"
                 src={twit}
-                height="32px"
-                width="32px"
+                height="64px"
+                width="64px"
                 alt="myfolktale on twitter"
             />
             </a>
-        </li>
             
-        <li classNmae="mx-2">
-          <a 
+            <a 
             href="https://instagram.com/myfolktale"
             target="_blank"
             rel="noopener noreferrer"
             >
                 <img 
+                className="rounded-full hover:shadow-md"
                 src={insta}
-                height="32px"
-                width="32px"
+                height="64px"
+                width="64px"
                 alt="myfolktale on instagram"
             />
             </a>
-        </li>   
-      </ul>
+        </div>
     </div>
   );
 };
 
-export default Nav;
+export default Social;
