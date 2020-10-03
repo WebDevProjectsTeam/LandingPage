@@ -18,8 +18,8 @@ const Social = () => {
             >
                 <img 
                 src={twit}
-                height="32px"
-                width="32px"
+                height="64px"
+                width="64px"
                 alt="myfolktale on twitter"
             />
             </a>
@@ -31,8 +31,8 @@ const Social = () => {
             >
                 <img 
                 src={insta}
-                height="32px"
-                width="32px"
+                height="64px"
+                width="64px"
                 alt="myfolktale on instagram"
             />
             </a>
