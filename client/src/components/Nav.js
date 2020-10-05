@@ -23,7 +23,7 @@ const Nav = () => {
             </a>
         </li>
             
-        <li classNmae="mx-2">
+        <li className="mx-2">
           <a 
             href="https://instagram.com/myfolktale"
             target="_blank"
