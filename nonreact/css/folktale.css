@@ -5,8 +5,9 @@
 body {
     height: 100%;
     background-color: teal;
-    background: no-repeat top center url("../img/pexels-luriko-yamaguchi-2761017.jpg");
+    background: no-repeat top center url("../img/girlwithbook.jpg");
     background-size: cover;
+    background-position: center center;
 }
 
 #headline {
@@ -21,3 +22,6 @@ body {
     background-color: rgba(0,0,0, 0.75);
 }
 
+#mce-EMAIL {
+    width: 250px;
+}
