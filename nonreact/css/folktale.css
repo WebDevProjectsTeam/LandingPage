@@ -12,16 +12,29 @@ body {
 
 #headline {
     color: white;
+    font-family: "Piazzolla", serif;
+    font-weight: bold;
 }
 
 .textshadow {
     text-shadow: 2px 2px black;
-  }
+}
 
 #features {
-    background-color: rgba(0,0,0, 0.75);
+    font-family: "Piazzolla", serif;
+    background-color: rgba(0, 0, 0, 0.75);
 }
 
 #mce-EMAIL {
     width: 250px;
+    font-family: monospace;
+}
+
+.logo-head {
+    font-family: "Lobster", cursive;
+    letter-spacing: 4px;
+}
+
+.sub-head {
+    font-family: "Piazzolla", serif;
 }
