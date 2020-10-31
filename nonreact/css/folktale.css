@@ -1,5 +1,7 @@
+
+
 * {
-    font-family: Helvetica, Arial, sans-serif;
+    font-family: 'Lora', serif;
 }
 
 body {
@@ -11,6 +13,7 @@ body {
 }
 
 #headline {
+<<<<<<< HEAD
     color: white;
     font-family: "Piazzolla", serif;
     font-weight: bold;
@@ -19,6 +22,18 @@ body {
 .textshadow {
     text-shadow: 2px 2px black;
 }
+=======
+    font-family: 'Mr Bedfort', cursive;
+}
+
+#tagline {
+    font-family: 'Special Elite', cursive;
+}
+
+.textshadow {
+    text-shadow: 2px 3px black;
+  }
+>>>>>>> 823b4b65fa6c1ff00427becfd8c782b401ea83b5
 
 #features {
     font-family: "Piazzolla", serif;
@@ -27,6 +42,7 @@ body {
 
 #mce-EMAIL {
     width: 250px;
+<<<<<<< HEAD
     font-family: monospace;
 }
 
@@ -37,4 +53,6 @@ body {
 
 .sub-head {
     font-family: "Piazzolla", serif;
+=======
+>>>>>>> 823b4b65fa6c1ff00427becfd8c782b401ea83b5
 }
