@@ -1,5 +1,3 @@
-
-
 * {
     font-family: 'Lora', serif;
 }
@@ -13,16 +11,6 @@ body {
 }
 
 #headline {
-<<<<<<< HEAD
-    color: white;
-    font-family: "Piazzolla", serif;
-    font-weight: bold;
-}
-
-.textshadow {
-    text-shadow: 2px 2px black;
-}
-=======
     font-family: 'Mr Bedfort', cursive;
 }
 
@@ -33,26 +21,11 @@ body {
 .textshadow {
     text-shadow: 2px 3px black;
   }
->>>>>>> 823b4b65fa6c1ff00427becfd8c782b401ea83b5
 
 #features {
-    font-family: "Piazzolla", serif;
-    background-color: rgba(0, 0, 0, 0.75);
+    background-color: rgba(0,0,0, 0.75);
 }
 
 #mce-EMAIL {
     width: 250px;
-<<<<<<< HEAD
-    font-family: monospace;
-}
-
-.logo-head {
-    font-family: "Lobster", cursive;
-    letter-spacing: 4px;
-}
-
-.sub-head {
-    font-family: "Piazzolla", serif;
-=======
->>>>>>> 823b4b65fa6c1ff00427becfd8c782b401ea83b5
 }
