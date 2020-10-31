@@ -14,7 +14,10 @@
         <link href="https://fonts.googleapis.com/css2?family=Special+Elite&family=Mr+Bedfort&family=Lora:wght@600&display=swap" rel="stylesheet"> 
         <title>Folktale - Launching Soon!</title> 
     </head> 
-    <body> 
+    <body class="index-body"> 
+        <div class="contest">
+            <h4 class="contest-head">Join the ongoing folktale contest! Know more about it by adding yourself to the list below!</h4>
+        </div>
         <header class="flex flex-col items-center"> 
             <img src="img/myfolktale.jpg" class="rounded-full w-32 h-32 my-8 mx-auto" /> 
             <div class="text-center"> 
@@ -35,10 +38,12 @@
                                 <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups--> 
                                 <div style="position: absolute; left: -5000px;" aria-hidden="true">
                                     <input type="text" name="b_714da000b9b029dd1e5727b9d_bdf7b8b4f2" tabindex="-1" value="">
-                                </div> 
-                                <div class="clear">
-                                    <input type="submit" value="Add Me to the List!" name="subscribe" id="mc-embedded-subscribe" class="button m-4 p-2 rounded shadow-md bg-teal-200 font-bold hover:bg-white hover:text-teal-400">
-                                </div> 
+                                </div>
+                                <a href="contest.html">
+                                    <div class="clear">
+                                        <input type="submit" value="Add Me to the List!" name="subscribe" id="mc-embedded-subscribe" class="button m-4 p-2 rounded shadow-md bg-teal-200 font-bold hover:bg-white hover:text-teal-400">
+                                    </div>
+                                </a>
                             </div> 
                         </form> 
                     </div> 
@@ -55,6 +60,14 @@
                     <a href="https://www.twitter.com/myfolktale" target="_blank" rel="noopener noreferrer"> <img src="img/twittericonlg.svg" width="32px" height="32px" alt="myfolktale on twitter" class="mx-4" /> </a> <a href="https://www.instagram.com/myfolktale" target="_blank" rel="noopener noreferrer"> <img src="img/instagramiconlg.svg" width="32px" height="32px" alt="myfolktale on instagram" class="mx-4" /> </a> 
                 </div> 
             </div> 
-        </div> 
+        </div>
+        <script>
+            document.getElementById("mc-embedded-subscribe").addEventListener("click", (e) => {
+                if (document.getElementById("mce-EMAIL").value)
+                    window.location.href = "/contest.html";
+                else
+                    e.preventDefault();
+            });
+        </script>
     </body> 
 </html>

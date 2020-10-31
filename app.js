@@ -35,4 +35,4 @@ app.get("/", function (req, res) {
     res.sendFile(path.join(__dirname, "nonreact", "index.html"));
 });
 
-app.listen(8000);
+app.listen(8000, () => console.log("listening"));
