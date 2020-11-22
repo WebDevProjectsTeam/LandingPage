@@ -9,7 +9,7 @@ var jsonParser = bodyParser.json();
 
 app.use(cors());
 app.use(jsonParser);
-app.use(express.static(path.join(__dirname, "client/build")));
+app.use(express.static(path.join(__dirname, "nonreact")));
 
 //database config
 const db = require("knex")({
@@ -32,7 +32,7 @@ app.post("/email", function (req, res) {
 });
 
 app.get("/", function (req, res) {
-    res.sendFile(path.join(__dirname, "client/build", "index.html"));
+    res.sendFile(path.join(__dirname, "nonreact", "index.html"));
 });
 
-app.listen(8000);
+app.listen(8000, () => console.log("listening"));
