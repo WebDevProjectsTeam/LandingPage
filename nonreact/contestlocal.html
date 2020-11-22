@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Special+Elite&family=Mr+Bedfort&family=Lora:wght@600&display=swap" rel="stylesheet"> 
+        <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet" type="text/css" /> 
+        <link href="css/folktale.css" rel="stylesheet" type="text/css" />     
+        
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-E78XLVWG0X"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-E78XLVWG0X');
+        </script>
+
+        <title>Folktale Contest</title>
+    </head>
+
+    <body id="contestpage">
+
+        <!-- Facebook Javascript SDK activation -->
+        <script>
+            window.fbAsyncInit = function() {
+            FB.init({
+                appId            : '287451602432365',
+                autoLogAppEvents : true,
+                xfbml            : true,
+                version          : 'v9.0'
+            });
+            //this loads the sharing module, which currently autopops up on the home page
+            let fbShare = false;
+            handleClick = function(fbShare) {
+                if (fbShare) {
+                    FB.ui({
+                        method: 'share',
+                        href: 'https://myfolktale.com/contest.html'
+                        }, function(response){}
+                    );
+                    fbShare = false;
+                }
+            }
+ 
+            };
+        </script>
+        <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js"></script>
+        <!-- end of Facebook Javascript SDK -->
+
+
+        <header class="nav">
+            <img src="./img/myfolktale.jpg" alt="Folktale" />
+            <a href="https://myfolktale.com/login" class="btn">Log In</a>
+        </header>
+
+        <section class="section1">
+            <h1>The Folktale writing contest is on!</h1>
+        </section>
+
+        <section class="section2">
+            <h1>Let everyone know you are in!</h1>
+            <div class="flex justify-center flex-wrap">
+                <a target="_blank" href="http://twitter.com/intent/tweet?text=I%20just%20participated%20in%20the%20%40myfolktale%20story%20writing%20contest%2C%20Lets%20write%20a%20story%20together!%20Join%20here%3A%20myfolktale.com%0A%23nanowrimo%20%23nanowrimo2020%20%23writers"><img src="./img/twt.svg" width="64px" height="64px" alt="tweet about folktale" class="rounded-full hover:shadow-lg" /></a>
+                <a target="_blank" href="https://www.instagram.com/myfolktale/"><img src="./img/ig.svg" width="64px" height="64px" alt="myfolktale on instagram" class="rounded-full hover:shadow-lg" /></a>
+                <div onClick=handleClick(true)><img src="./img/fb.svg" width="64px" height="64px" alt="post about folktale" class="rounded-full hover:shadow-lg cursor-pointer" /></div>
+            </div>
+        </section>
+
+        <section class="section3">
+            <h1>at Folktale you can:</h1>
+            <ul>
+                <li>Write your own stories!</li>
+                <li>Contribute to others' tales!</li>
+                <li>Meet people who love stories!</li>
+                <li>Get feedback on your writing!</li>
+            </ul>
+        </section>
+
+        <section class="info text-2xl w-5/6 mx-auto rounded-lg shadow-md">
+            <p class="p-4 text-left">
+                <span class="text-3xl"><a href="https://myfolktale.com">The Folktale Contest</a></span> is a story writing contest. Entry is free! It runs parallel to the 2020 <span class="text-3xl"><a href="https://nanowrimo.org/">NaNoWriMo</a></span> event, so you can take part in both!
+            </p>
+            <p class="p-4 text-left">
+                Because Folktale is a collaborative story telling platform, contributions are much smaller than an entire novel. Instead you're writing small story parts, to which other people can contribute.
+            </p>
+            <p class="p-4 text-left">
+                Use it as a way to:
+            </p>
+            <ul class="text-2xl">
+                <li>relax from your novel</li>
+                <li>meet other writers</li>
+                <li>get inspired by interesting tales</li>
+            </ul>
+        </section>
+        
+        <section class="rules">
+            <h1>How to participate:</h1>
+            <ol>
+                <li class="py-4">- Log in to <a href="https://myfolktale.com">Folktale</a> anytime in the month of November.</li>
+                <li class="py-4">- During the month, you can write your own stories, or contribute to already started stories.</li>
+                <li class="py-4">- It's the likes on your contributions that count. The participant with the highest ratio of likes to contributions over the course of the month wins! You can share the contest via social media to get more votes from friends!</li>
+            </ol>
+
+            <p class="my-12">
+                <a href="https://myfolktale.com/login" class="startnow py-4 px-8 rounded-lg shadow-md mx-auto text-white">Get Started Now!</a>
+            </p>
+        </section>
+
+        <div id="scripts">
+            <!-- Default Statcounter code for Folktale https://www.myfolktale.com -->
+            <script type="text/javascript">
+                var sc_project=12421186; 
+                var sc_invisible=1; 
+                var sc_security="08d3436b"; 
+                var sc_https=1; 
+                var sc_remove_link=1; 
+            </script>
+            <script type="text/javascript"
+                src="https://www.statcounter.com/counter/counter.js" async>
+            </script>
+            <noscript>
+                <div class="statcounter">
+                    <img class="statcounter"
+                    src="https://c.statcounter.com/12421186/0/08d3436b/1/" 
+                    alt="Web Analytics">
+                </div>
+            </noscript>
+            <!-- End of Statcounter Code -->
+        </div>
+    </body>
+</html>

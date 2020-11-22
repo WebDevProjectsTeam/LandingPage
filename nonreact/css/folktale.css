@@ -1,33 +1,178 @@
-
-
-* {
-    font-family: 'EB Garamond', serif;
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    box-sizing: border-box;
 }
 
-body {
+* {
+    font-family: "Lora", serif;
+}
+
+.index-body {
     height: 100%;
-    background-color: teal;
+    background-color: #25eacc;
     background: no-repeat top center url("../img/girlwithbook.jpg");
     background-size: cover;
     background-position: center center;
 }
 
 #headline {
-    font-family: 'Mr Bedfort', cursive;
+    font-family: "Mr Bedfort", cursive;
 }
 
 #tagline {
-    font-family: 'Special Elite', cursive;
+    font-family: "Special Elite", cursive;
 }
 
 .textshadow {
     text-shadow: 2px 3px black;
-  }
+}
 
-#features {
-    background-color: rgba(0,0,0, 0.75);
+.transbg {
+    background-color: rgba(0, 0, 0, 0.75);
 }
 
 #mce-EMAIL {
     width: 250px;
+}
+
+/* for contest page */
+
+/*#contestpage {
+    background-image: url("../img/stripes.svg");
+}*/
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+.nav img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.nav a {
+    font-size: 20px;
+    padding: 1rem 3rem;
+    background: #25eacc;
+    color: white;
+    border-radius: 11px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    text-decoration: none;
+    cursor: pointer;
+}
+.nav a:hover {
+    background: #212121;
+}
+
+.section1 {
+    padding: 100px 0;
+    text-align: center;
+    background: no-repeat top center url(../img/pen.svg);
+    background-size: auto;
+    background-position: center center;
+}
+.section1 h1 {
+    font-family: "Special Elite", cursive;
+    font-size: 3rem;
+    color: #212121;
+}
+
+.section2 {
+    background-color: #25eacc;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.section2 h1 {
+    color: white;
+    font-size: 2.5rem;
+    margin-bottom: 7px;
+}
+.section2 div img {
+    width: 70px;
+    height: 70px;
+    margin: 5px 10px;
+}
+
+.section3 {
+    text-align: center;
+    padding: 40px 0;
+}
+.section3 h1 {
+    font-family: "Special Elite", cursive;
+    font-size: 50px;
+    color: #25eacc;
+}
+.section3 ul li {
+    color: #212121;
+    font-size: 30px;
+    padding: 10px 0 10px 0;
+}
+
+.info {
+    background-color: #25eacc;
+    padding: 71px;
+    color: white;
+    text-align: center;
+}
+.info span {
+    color: #212121;
+}
+.info span a {
+    text-decoration: none;
+    color: #212121;
+}
+.info ul {
+    color: #212121;
+    text-decoration: none;
+    list-style: none;
+}
+
+.rules {
+    color: #212121;
+    text-align: center;
+    padding: 50px 100px;
+}
+.rules h1 {
+    font-size: 50px;
+    margin-bottom: 12px;
+    color: #25eacc;
+}
+.rules ol {
+    font-size: 30px;
+    text-align: left;
+}
+.rules ol li a {
+    color: #25eacc;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.startnow {
+    background:#212121;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.startnow:hover {
+    background: #25eacc;
+}
+
+@media only screen and (max-width: 700px) {
+    .section2 {
+        padding: 20px;
+    }
+
+    .section2 div img {
+        width: 70px;
+        height: 80px;
+    }
 }
